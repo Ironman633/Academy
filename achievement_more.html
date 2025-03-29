@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Achievements</title>
+    <!-- CSS -->
+    <style>
+        body {
+            background-color: #272727;
+        }
+        .note {
+            background-color: #E9D66F;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            align-items: center;
+            padding: 1em;
+            font-size: medium;
+        }
+
+        .slides10, .slides12 {
+            display: none;
+        }
+    </style>
+    <!-- /CSS -->
+</head>
+<body>
+    <!-- heading -->
+    <h1 style="color: #E9D66F;"><center><u>Achievements</u></center></h1>
+    <!-- /heading -->
+     
+    <!-- starting note -->
+    <center><img src="A_IMAGE/A1.jpg" style="width: 300px; border-radius: 10px; height: 400px; margin-top: 20px;"></center>
+    <div class="note">
+        <h2 style="margin-top: 50px;"><center>A Journey of Growth and Success.</center></h2>
+        <p><center>Success at Aksharam Academy is not just about crossing the finish line; it's about the countless steps taken, the lessons learned, and the strength built along the way. We celebrate every milestone—big or small—because we know that each one represents a dream fulfilled, a barrier broken, and a future transformed.</center></p>
+    </div>
+    <!-- /ending point -->
+
+    <!-- auto changing image for class 10 -->
+    <div class="class10">
+        <center><img class="slides10" src="A_IMAGE/A1.jpg" style="width: 300px; border-radius: 10px; height: 400px; margin-top: 100px;"></center>
+        <center><img class="slides10" src="A_IMAGE/A10.1.jpg" style="width:300px; border-radius: 10px; height: 400px; margin-top: 100px;"></center>
+        <center><img class="slides10" src="A_IMAGE/A10.2.jpg" style="width:300px; border-radius: 10px; height: 400px; margin-top: 100px;"></center>
+        <center><img class="slides10" src="A_IMAGE/A10.3.jpg" style="width:300px; border-radius: 10px; height: 400px; margin-top: 100px;"></center>
+    </div>
+    <!-- /auto changing image -->
+
+    <div class="note">
+        <p style="margin-top: 0px;"><center>Aksharam Academy believes that each and every student is an achiever whether you have scored 90% or less, because there may be a difference in your percentages in result but you all gave your 100% during preparation time. So all the very best for your future, may you all achieve the best in whatever fields you want to go.</center></p>
+    </div>
+
+    <!-- auto change image for class 12 -->
+     <div class="class12">
+        <center><img class="slides12" src="A_IMAGE/A1.jpg" style="width: 300px; border-radius: 10px; height: 400px; margin-top: 100px;"></center>
+        <center><img class="slides12" src="A_IMAGE/A12.1.jpg" style="width: 300px; border-radius: 10px; height: 400px; margin-top: 100px;"></center>
+        <center><img class="slides12" src="A_IMAGE/A12.2.jpg" style="width: 300px; border-radius: 10px; height: 400px; margin-top: 100px;"></center>
+        <center><img class="slides12" src="A_IMAGE/A12.3.jpg" style="width: 300px; border-radius: 10px; height: 400px; margin-top: 100px;"></center>
+     </div>
+    <!-- /auto change image -->
+
+    <!--logic/script-->
+    <script>
+        // Starting logic of slideshow for class 10
+        var myIndex10 = 0;
+        carousel10();
+
+        function carousel10() {
+            var i;
+            var x = document.getElementsByClassName("slides10");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex10++;
+            if (myIndex10 > x.length) {myIndex10 = 1}
+            x[myIndex10-1].style.display = "block";
+            setTimeout(carousel10, 3000); // Change image every 3 seconds
+        }
+
+        // Starting logic of slideshow for class 12
+        var myIndex12 = 0;
+        carousel12();
+
+        function carousel12() {
+            var i;
+            var y = document.getElementsByClassName("slides12");
+            for (i = 0; i < y.length; i++) {
+                y[i].style.display = "none";
+            }
+            myIndex12++;
+            if (myIndex12 > y.length) {myIndex12 = 1}
+            y[myIndex12-1].style.display = "block";
+            setTimeout(carousel12, 3000); // Change image every 3 seconds
+        }
+    </script>
+    <!--/logic/script-->
+</body>
+</html>
