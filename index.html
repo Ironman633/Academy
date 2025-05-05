@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aksharam Academy - Quality Education for 1st to 12th</title>
+    <!-- Preload important resources -->
+    <link rel="preload" href="style.css" as="style">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section with Logo and Navigation -->
+    <header>
+        <div class="logo-container">
+            <img src="images/ChatGPT Image May 1, 2025, 04_02_26 PM.png" alt="Aksharam Academy Logo" class="logo" loading="lazy">
+            <div class="logo-text">
+                <h1>Aksharam Academy</h1>
+                <p>Where Concept Clarity is The Top Most Priority.</p>
+            </div>
+        </div>
+        <nav>
+            <ul class="nav-tabs">
+                <li class="active" data-tab="home"><i class="fas fa-home"></i> Home</li>
+                <li data-tab="courses"><i class="fas fa-book"></i> Courses</li>
+                <li data-tab="about"><i class="fas fa-info-circle"></i> About Us</li>
+                <li data-tab="faculty"><i class="fas fa-chalkboard-teacher"></i> Faculty</li>
+                <li data-tab="contact"><i class="fas fa-envelope"></i> Contact</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Home Tab - Main landing section -->
+        <section id="home" class="tab-content active">
+            <div class="hero">
+                <div class="hero-text">
+                    <h2>Quality Education for Grades 1-12</h2>
+                    <p>Specializing in Arts/Humanities and Commerce for 11th & 12th</p>
+                    <button class="cta-button" id="enroll-now">Enroll Now</button>
+                </div>
+                <div class="hero-image">
+                    <img src="images/home.png" alt="Students learning" loading="lazy">
+                </div>
+            </div>
+
+            <!-- Key Features Section -->
+            <div class="features">
+                <button class="feature-card" id="more" data-tab="faculty">
+                    <i class="fas fa-user-graduate"></i>
+                    <h3>Experienced Faculty</h3>
+                    <p>Our teachers are highly qualified with B.Com and M.B.A degrees</p>
+                </button>
+
+                <button class="feature-card" id="core" data-tab="courses">
+                    <i class="fas fa-book-open"></i>
+                    <h3>Comprehensive Curriculum</h3>
+                    <p>Covering all subjects from 1st to 10th standard</p>
+                </button>
+
+                <button class="feature-card" id="core1" data-tab="courses">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Specialized Streams</h3>
+                    <p>Arts/Humanities and Commerce for 11th & 12th</p>
+                </button>
+            </div>
+
+            <!-- Testimonials Slider -->
+            <div class="testimonials">
+                <h2>What Our Students Say</h2>
+                <div class="testimonial-slider">
+                    <div class="testimonial active">
+                        <p>"The teachers at Aksharam Academy make learning fun and easy to understand. My grades have improved so much!"</p>
+                        <p class="author">- Riya, Grade 8</p>
+                    </div>
+                    <div class="testimonial">
+                        <p>"The small class sizes ensure every student gets individual attention. I've never learned so effectively before."</p>
+                        <p class="author">- Anushka, Grade 11 Commerce</p>
+                    </div>
+                    <div class="testimonial">
+                        <p>"The History teacher makes the subject come alive with stories and discussions. I actually look forward to class now!"</p>
+                        <p class="author">- Kirti, Grade 11 Humanities</p>
+                    </div>
+                    <div class="testimonial">
+                        <p>"The Commerce faculty is excellent. I understood complex accounting concepts easily."</p>
+                        <p class="author">- Seema, Grade 12 Commerce</p>
+                    </div>
+                    <div class="testimonial">
+                        <p>"My child's performance improved dramatically after joining Aksharam Academy."</p>
+                        <p class="author">- Mrs. Sharma, Parent</p>
+                    </div>
+                </div>
+                <div class="slider-controls">
+                    <span class="dot active" data-slide="0"></span>
+                    <span class="dot" data-slide="1"></span>
+                    <span class="dot" data-slide="2"></span>
+                    <span class="dot" data-slide="3"></span>
+                    <span class="dot" data-slide="4"></span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Courses Tab - All available courses -->
+        <section id="courses" class="tab-content">
+            <h2>Our Courses</h2>
+            <div class="course-categories">
+                <div class="category-card primary">
+                    <h3>Primary School (1st - 5th)</h3>
+                    <ul>
+                        <li>Mathematics</li>
+                        <li>Science</li>
+                        <li>Social Studies</li>
+                        <li>English</li>
+                        <li>Hindi</li>
+                    </ul>
+                </div>
+                <div class="category-card middle">
+                    <h3>Middle School (6th - 8th)</h3>
+                    <ul>
+                        <li>Mathematics</li>
+                        <li>Science (Physics, Chemistry, Biology)</li>
+                        <li>Social Studies (History, Geography, Civics)</li>
+                        <li>English</li>
+                        <li>Hindi/Sanskrit</li>
+                    </ul>
+                </div>
+                <div class="category-card secondary">
+                    <h3>Secondary School (9th - 10th)</h3>
+                    <ul>
+                        <li>Mathematics</li>
+                        <li>Science</li>
+                        <li>Social Science</li>
+                        <li>English</li>
+                        <li>Hindi/Sanskrit</li>
+                    </ul>
+                </div>
+                <div class="category-card senior">
+                    <h3>Senior Secondary (11th - 12th)</h3>
+                    <div class="streams">
+                        <div class="stream">
+                            <h4>Commerce</h4>
+                            <ul>
+                                <li>Accountancy</li>
+                                <li>Business Studies</li>
+                                <li>Economics</li>
+                                <li>English</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="category-card senior-art">
+                    <h3>Senior Secondary (11th - 12th)</h3>
+                    <div class="s-art">
+                        <div class="stream-art">
+                            <h4>Arts/Humanities</h4>
+                            <ul>
+                                <li>History</li>
+                                <li>Political Science</li>
+                                <li>Economics</li>
+                                <li>Geography/Psychology</li>
+                                <li>English</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Tab - Academy information -->
+        <section id="about" class="tab-content">
+            <h2>About Aksharam Academy</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="images/in front.png" alt="Aksharam Academy Classroom" loading="lazy">
+                </div>
+                <div class="about-text">
+                    <p>Aksharam Academy was founded with the vision of providing quality education to students from 1st to 12th standard, with special focus on Arts/Humanities and Commerce streams for senior secondary students.</p>
+                    <p>Our academy believes in holistic development of students, combining academic excellence with moral values and life skills.</p>
+                    <p>The academy is managed by Dheeraj, a B.Com and M.B.A graduate with extensive experience in teaching and mentoring students.</p>
+                    <div class="mission-vision">
+                        <div class="mission">
+                            <h3>Our Mission</h3>
+                            <p>To empower students with knowledge, skills, and values that prepare them for academic success and life challenges.</p>
+                        </div>
+                        <div class="vision">
+                            <h3>Our Vision</h3>
+                            <p>To be a premier educational institution that nurtures future leaders and responsible citizens.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Achievements Section with Image Sliders -->
+            <div class="achievements">
+                <h1>Our Achievements</h1>
+                <!-- Auto-changing image slider for class 10 -->
+                <div class="achivement-container">
+                    <div class="class10">
+                        <center><img class="slides10" src="A_IMAGE/A1.jpg" alt="Class 10 Achievement" loading="lazy"></center>
+                        <center><img class="slides10" src="A_IMAGE/A10.1.jpg" alt="Class 10 Achievement" loading="lazy"></center>
+                        <center><img class="slides10" src="A_IMAGE/A10.2.jpg" alt="Class 10 Achievement" loading="lazy"></center>
+                        <center><img class="slides10" src="A_IMAGE/A10.3.jpg" alt="Class 10 Achievement" loading="lazy"></center>
+                    </div>
+                    
+                    <!-- Auto-changing image slider for class 12 -->
+                    <div class="class12">
+                        <center><img class="slides12" src="A_IMAGE/A1.jpg" alt="Class 12 Achievement" loading="lazy"></center>
+                        <center><img class="slides12" src="A_IMAGE/A12.1.jpg" alt="Class 12 Achievement" loading="lazy"></center>
+                        <center><img class="slides12" src="A_IMAGE/A12.2.jpg" alt="Class 12 Achievement" loading="lazy"></center>
+                        <center><img class="slides12" src="A_IMAGE/A12.3.jpg" alt="Class 12 Achievement" loading="lazy"></center>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Faculty Tab - Teacher profiles -->
+        <section id="faculty" class="tab-content">
+            <h2>Our Faculty</h2>
+            <div class="faculty-members">
+                <div class="faculty-card">
+                    <img src="images/image2.png" alt="Dheeraj" loading="lazy">
+                    <h3>Dheeraj</h3>
+                    <p class="qualification">B.Com, M.B.A</p>
+                    <p class="subject">Commerce & Humanities</p>
+                    <p class="bio">Founder and principal teacher with 10+ years of teaching experience.</p>
+
+                    <!-- Detailed description (initially hidden) -->
+                    <div class="detailed-bio">
+                        <p>Dheeraj is the visionary founder and principal teacher of Aksharam Academy, bringing over a decade of transformative teaching experience to the classroom. As a B.Com and M.B.A graduate, he combines academic excellence with practical wisdom to create an unparalleled learning environment.</p>
+
+                        <h4>Unique Teaching Methodology:</h4>
+                        <ul>
+                            <li>Breaks down complex concepts into simple, digestible parts using real-world analogies</li>
+                            <li>Incorporates interactive activities that make lessons memorable and engaging</li>
+                            <li>Designs customized learning paths for different student needs</li>
+                            <li>Uses storytelling techniques to connect theoretical knowledge with practical applications</li>
+                        </ul>
+
+                        <h4>Beyond Academics:</h4>
+                        <p>What truly sets Dheeraj apart is his commitment to holistic education:</p>
+                        <ul>
+                            <li>Integrates moral values and life lessons seamlessly into every subject</li>
+                            <li>Focuses on developing critical thinking and problem-solving skills</li>
+                            <li>Teaches practical life skills like financial literacy and communication</li>
+                            <li>Creates a supportive environment where students learn to face challenges with confidence</li>
+                        </ul>
+
+                        <p class="quote">"True education isn't just about marks - it's about equipping young minds with the knowledge, values, and skills they need to thrive in life. My goal is to create not just successful students, but responsible citizens and future leaders."</p>
+                    </div>
+
+                    <!-- Read More toggle button -->
+                    <button class="read-more-btn">Read More</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Tab - Contact information and form -->
+        <section id="contact" class="tab-content">
+            <h2>Contact Us</h2>
+            <div class="contact-container">
+                <div class="contact-header">
+                    <div class="contact-info">
+                        <h3>Get in Touch</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> Block Number-1, House-7, Dakshinpuri Rd, Block 17, Dakshinpuri Extension, Delhi, New Delhi-110062</p>
+                        <p><i class="fas fa-phone"></i> +91 98717 33703</p>
+                        <p><i class="fas fa-envelope"></i> aksharamacademy@gmail.com</p>
+                        <p><i class="fas fa-clock"></i> Monday-Saturday: 10:00 AM - 8:00 PM</p>
+                    </div>
+
+                    <div class="social-media">
+                        <a href="https://www.facebook.com/aksharam2017/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/aksharam2017/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <h3>Send us a Message</h3>
+                    <form id="contactForm" method="post" name="google-sheet" action="https://script.google.com/macros/s/AKfycbx1-uvPmyQIbbt8Ad7d1UTI0gkm5bXHnlFpx5WAYtNg2Bqrl6mHUIh7MC4HNCU14g0RLw/exec">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Your Name" required name="Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Your Email" name="Email">
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="mobile" placeholder="Your Mobile Number" required name="Mobile">
+                        </div>
+                        <div class="form-group">
+                            <select id="subject" required name="Subject">
+                                <option value="">Select Subject</option>
+                                <option value="Admission Inquiry">Admission Inquiry</option>
+                                <option value="Course Information">Course Information</option>
+                                <option value="Feedback">Feedback</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" rows="5" placeholder="Your Message" required name="Message"></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn" name="Submit" value="Submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Success Dialog -->
+            <div class="dialog-overlay" id="dialogOverlay"></div>
+            <div class="success-dialog" id="successDialog">
+                <i class="fas fa-check-circle"></i>
+                <h3>Thank You!</h3>
+                <p id="successMessage">Your message has been received. We will contact you soon.</p>
+                <button class="submit-btn" id="dialogCloseBtn">OK</button>
+            </div>
+
+            <!-- Error Dialog -->
+            <div class="error-dialog" id="errorDialog">
+                <i class="fas fa-exclamation-circle"></i>
+                <h3>Error!</h3>
+                <p id="errorMessage">There was an error submitting your form. Please try again or contact us directly.</p>
+                <button class="submit-btn" id="errorDialogCloseBtn">OK</button>
+            </div>
+
+            <!-- Embedded Google Map -->
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3505.347180501677!2d77.2385354!3d28.5208227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce19eba38d81d%3A0x1747edf379609f96!2sAksharam%20academy!5e0!3m2!1sen!2sin!4v1714461234567!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Aksharam Academy Location"></iframe>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#" data-tab="home">Home</a></li>
+                    <li><a href="#" data-tab="courses">Courses</a></li>
+                    <li><a href="#" data-tab="about">About Us</a></li>
+                    <li><a href="#" data-tab="faculty">Faculty</a></li>
+                    <li><a href="#" data-tab="contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Courses</h3>
+                <ul>
+                    <li><a href="#" data-tab="courses">Primary School</a></li>
+                    <li><a href="#" data-tab="courses">Middle School</a></li>
+                    <li><a href="#" data-tab="courses">Secondary School</a></li>
+                    <li><a href="#" data-tab="courses">Senior Secondary</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Block Number-1, House-7, Dakshinpuri Rd, Block 17, Dakshinpuri Extension, Delhi, New Delhi-110062</p>
+                <p><i class="fas fa-phone"></i> +91 98717 33703</p>
+                <p><i class="fas fa-envelope"></i> aksharamacademy@gmail.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Aksharam Academy. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript File -->
+    <script src="script.js" defer></script>
+</body>
+</html>
