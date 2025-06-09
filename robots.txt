@@ -1,0 +1,31 @@
+# robots.txt for Aksharam Academy
+# Last updated: 2025-05-10
+
+User-agent: *
+Allow: /
+Disallow: /images/          # Embedded images don't need separate indexing
+Disallow: /A_IMAGE/         # Achievement images
+Disallow: /private/         # Future-proofing for any private folders
+Disallow: /admin/           # Block any future admin pages
+Disallow: /tmp/
+Disallow: /cgi-bin/
+Disallow: /*.php$           # Block any PHP files if they exist
+Disallow: /*.js$            # Block direct access to JS files
+Disallow: /*.css$           # Block direct access to CSS files
+
+# Special allowances for search engines
+User-agent: Googlebot
+Allow: /*.html$
+Allow: /*.htm$
+
+User-agent: Googlebot-Image
+Allow: /images/
+Allow: /A_IMAGE/
+
+User-agent: Bingbot
+Crawl-delay: 2              # Reduce crawl rate for Bing
+
+# Sitemap locations
+Sitemap: https://www.aksharamacademy.com/sitemap.xml
+Sitemap: https://www.aksharamacademy.com/sitemap-news.xml  # Future news sitemap
+Sitemap: https://www.aksharamacademy.com/sitemap-videos.xml # Future video sitemap
